@@ -15,21 +15,15 @@
 
 .hero-actions {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .hero-actions {
-    flex-direction: row;
-    justify-content: center;
-  }
+  margin-bottom: 1.5rem;
 }
 
 .install-note {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-dim);
+  opacity: 0.8;
 }
 
 .nav-links {

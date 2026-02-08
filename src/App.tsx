@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { Download, Shield, Zap, Globe, Github, Smartphone, MapPin } from 'lucide-react';
 import './App.css';
 
-const PWA_URL = 'https://ahmeddaahi.github.io/meter-calculator/';
 const APK_URL = '/taxi-meter.apk';
 
 function App() {
@@ -26,32 +25,25 @@ function App() {
         </a>
         <div className="nav-links">
           <a href="#features" className="nav-link">Features</a>
-          <a href={PWA_URL} target="_blank" rel="noopener noreferrer" className="btn-download small">
-            OPEN APP
-          </a>
         </div>
       </nav>
 
       {/* Hero Section */}
       <section className="hero">
         <motion.div {...fadeInUp}>
-          <div className="badge glass">SOLVING THE ROAD</div>
-          <h1>Precision Meters <br /><span>In Your Pocket</span></h1>
+          <div className="badge glass">STABLE & PROFESSIONAL</div>
+          <h1>Precision Meters <br /><span>On Your Android</span></h1>
           <p>
-            Experience the most professional and reliable taxi meter app.
-            Works 100% offline with GPS precision and custom fare settings.
+            The most reliable taxi meter for professionals.
+            Experience 100% offline precision with GPS tracking and custom fare controls.
           </p>
           <div className="hero-actions">
-            <a href={PWA_URL} target="_blank" rel="noopener noreferrer" className="btn-download">
-              <Globe size={20} />
-              OPEN WEB APP
-            </a>
-            <a href={APK_URL} download className="btn-download secondary">
-              <Download size={20} />
-              DOWNLOAD APK
+            <a href={APK_URL} download className="btn-download">
+              <Download size={22} />
+              DOWNLOAD ANDROID APK
             </a>
           </div>
-          <p className="install-note">Available for Android (APK) and iOS/Android (PWA)</p>
+          <p className="install-note">Optimized for stability and professional use</p>
         </motion.div>
 
         {/* Mockup Animation */}
