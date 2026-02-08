@@ -111,6 +111,19 @@ body {
   background: var(--primary-hover);
 }
 
+.btn-download.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--glass-border);
+  box-shadow: none;
+}
+
+.btn-download.secondary:hover {
+  background: var(--glass);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+}
+
 /* Features */
 .features-grid {
   display: grid;

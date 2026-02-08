@@ -3,6 +3,7 @@ import { Download, Shield, Zap, Globe, Github, Smartphone, MapPin } from 'lucide
 import './App.css';
 
 const PWA_URL = 'https://ahmeddaahi.github.io/meter-calculator/';
+const APK_URL = '/taxi-meter.apk';
 
 function App() {
   const fadeInUp = {
@@ -42,11 +43,15 @@ function App() {
           </p>
           <div className="hero-actions">
             <a href={PWA_URL} target="_blank" rel="noopener noreferrer" className="btn-download">
-              <Download size={20} />
-              DOWNLOAD / INSTALL
+              <Globe size={20} />
+              OPEN WEB APP
             </a>
-            <p className="install-note">Available for iOS and Android as a PWA</p>
+            <a href={APK_URL} download className="btn-download secondary">
+              <Download size={20} />
+              DOWNLOAD APK
+            </a>
           </div>
+          <p className="install-note">Available for Android (APK) and iOS/Android (PWA)</p>
         </motion.div>
 
         {/* Mockup Animation */}
